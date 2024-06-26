@@ -1,0 +1,66 @@
+<template>
+    <lightning-card title="Seach Student" icon-name="standard:search">
+    <div class="slds-m-around_medium">
+        <h1 class="slds-text-heading_small">Student Search</h1>
+        
+    </div>
+    <div onkeyup={handleKeyUp}>
+        <lightning-input
+            name="student-search"
+            label="Search when user hits the 'enter' key"
+            type="search"
+        ></lightning-input>
+    </div>
+    <template lwc:if={isOneStudent}>
+        <p if:true={queryterm} class="slds-p-vertical_medium">
+            <b><i> Only one student found</i></b>
+        </p>
+        <template if:true={students}>
+            <template for:each={students} for:item="student">
+                <p key={student.Id} class="studentNameShow">{student.Student_Name__c}</p>
+            </template>
+        </template>
+        <lightning-datatable key-field="id" data={students} columns={columns}
+            hide-checkbox-column="true">
+        </lightning-datatable>
+        <br>
+        
+
+
+        <c-search-teacher-detail-component student-name={studentName} student-level={studentLevel}
+                            subject-teachers={subjectTeachers} render-details={renderDetails}
+                            ongetsinglestudent={getDetailsOfStudent}>
+                        </c-search-teacher-detail-component>
+        
+        
+        
+    </template>
+
+    <template lwc:if={isMoreStudent}>
+        <p if:true={querytermy} class="slds-p-vertical_medium">
+            <b><i> Showing resuls for {queryterm}</i> </b>
+        </p>
+        <lightning-datatable key-field="id" data={students} columns={columns} max-row-selection="1"
+        onrowselection={handleSelection}>
+    </lightning-datatable>
+    <br>
+    <div>
+        <i>Multiple students found</i>
+    </div>
+    <br>
+    <lightning-button variant="brand" label="Get Details" onclick={getDetailsOfStudent}
+        icon-name="utility:list"></lightning-button>
+    <c-search-teacher-detail-component student-name={studentName} student-level={studentLevel}
+        subject-teachers={subjectTeachers} render-details={renderDetails}>
+    </c-search-teacher-detail-component> 
+
+    </template>
+
+    <template lwc:if={isNoStudent}>
+        <p class="slds-p-vertical_medium">
+            <b>No Student found </b>
+        </p>
+    </template>
+        
+    </lightning-card>
+</template>

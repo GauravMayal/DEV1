@@ -1,0 +1,30 @@
+<template>
+    <lightning-button label="Download"
+     title="Download action"
+      icon-name="utility:download"
+       onclick={clickHandler}>
+    </lightning-button>
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+            <tr class="">
+                <th class="slds-size_3-of-10" scope="col">
+                    <div class="slds-truncate" title="Id">Id</div>
+                </th>
+                <th class="slds-size_3-of-10" scope="col">
+                    <div class="slds-truncate" title="Name">Student Name</div>
+                </th>
+               
+                </tr>
+                </thead>
+                <tbody>
+    <template for:each={userData} for:item="stu" for:index="index">
+            <tr key={stu.Id} class="slds-hint-parent">
+                <td>{stu.Id}</td>
+                <td>{stu.Name}</td>
+            </tr>
+    </template>
+    </tbody>
+  </table>
+    
+
+</template>
