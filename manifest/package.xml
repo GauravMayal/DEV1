@@ -1,56 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>*</members>
+		<members>TestDeploy</members>
 		<name>ApexClass</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexPage</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ApexTrigger</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AuraDefinitionBundle</name>
-	</types>
-	<types>
-		<members>Account.T_TestObj__c</members>
-		<name>CustomField</name>
-	</types>
-	<types>
-	
-		<members>Opportunity2__c</members>
-		
-		<members>Student_Teacher__c</members>
-		<members>Student__c</members>
-		<members>T_TestObj__c</members>
-		<members>Teacher__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
-		<members>Opportunity_Record_Page</members>
-		<members>Student_Record_Page</members>
-		<members>Teacher_Record_Page</members>
-		<name>FlexiPage</name>
-	</types>
-	<types>
-		<members>CreateStudentFlow</members>
-		<name>Flow</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>unfiled$public/New_Students_Report_1Gr</members>
-		<name>Report</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>StaticResource</name>
 	</types>
 	<version>60.0</version>
 </Package>
