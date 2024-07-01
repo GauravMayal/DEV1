@@ -1,0 +1,6 @@
+<aura:component implements="lightning:actionOverride,force:lightningQuickAction,force:hasRecordId,flexipage:availableForRecordHome" access="global">
+<aura:handler name="init" value="{!this}" action="{!c.init}" />
+<lightning:card>
+<lightning:flow aura:id="flowData" />
+</lightning:card>   
+</aura:component>
