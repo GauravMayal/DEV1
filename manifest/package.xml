@@ -23,8 +23,20 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Opportunity_Record_Page</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>CreateStudentFlow</members>
+		<name>Flow</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>StaticResource</name>
 	</types>
 	<version>60.0</version>
 </Package>
