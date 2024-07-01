@@ -13,7 +13,7 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
-		<members>CreateStudentFlow</members>
+		<members>*</members>
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
@@ -28,6 +28,7 @@
 	</types>
 	<types>
 		<members>Opportunity_Record_Page</members>
+		<members>Student_Record_Page</members>
 		<members>Teacher_Record_Page</members>
 		<name>FlexiPage</name>
 	</types>

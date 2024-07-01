@@ -1,0 +1,31 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome" controller="StudentDetailsController">
+
+    <aura:attribute name="teacherId" type="Id" />
+<aura:attribute name="students" type="List" />
+ 
+ 
+
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+
+<table class="slds-table">
+<thead>
+<tr>
+<th>Student Name</th>
+<th>Level</th>
+<th>Physically Disabled</th>
+<th>Student Description</th>
+</tr>
+</thead>
+<tbody>
+<aura:iteration items="{!v.students}" var="student">
+    <tr>
+<td>{!student.Student_Name__c}</td>
+<td>{!student.Level__c}</td>
+        <td><input type="checkbox" disabled="disabled"  value="{!student.Physically_Disabled__c}"/></td>
+<td>{!student.Description__c}</td>
+</tr>
+</aura:iteration>
+</tbody>
+</table>
+</aura:component>
