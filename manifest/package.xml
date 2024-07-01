@@ -17,10 +17,13 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
-		<members>Account</members>
-		<members>Opportunity</members>
+		<members>Account.T_TestObj__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+	
 		<members>Opportunity2__c</members>
-		<members>Quote</members>
+		
 		<members>Student_Teacher__c</members>
 		<members>Student__c</members>
 		<members>T_TestObj__c</members>
@@ -42,8 +45,8 @@
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
-		<members>Admin</members>
-		<name>Profile</name>
+		<members>unfiled$public/New_Students_Report_1Gr</members>
+		<name>Report</name>
 	</types>
 	<types>
 		<members>*</members>
